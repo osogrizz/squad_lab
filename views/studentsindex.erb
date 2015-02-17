@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Roster</title>
+</head>
+<body>
+   <h1>Students</h1>
+   <% @students.each do |student| %>
+
+  <h3> Name: <a href="/squads/:squad_id/students/:id"><%= student["name"] %></a></h3>
+
+  <p>
+    <a href="/">Edit Student</a>
+  </p>
+  
+<% end %>
+
+
+
+
+<p>
+  <a href="/squads/:squad_id/students/newstudent">Add Student</a>
+</p>
+
+
+  
+</body>
+</html>

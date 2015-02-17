@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Squads List</h1>
+  
+     <% @squads.each do |squad| %>
+      
+  <li>
+    <h2> <%= squad["name"] %> </h2>
+    
+  </li>
+
+  <p>
+    <a href="/squads/<%= squad["id"] %>">Squad Info</a>
+  </p>
+
+  <p>
+    <a href="/squads/<%= squad["id"] %>/editsquads">Edit Squad</a>
+  </p>
+
+<% end %>
+
+  <p>
+    <a href="/squads/new">Create a new squad</a>
+  </p>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Squad Info</title>
+</head>
+<body>
+  <h1>Squad Info Page</h1>
+  
+
+  <h3> Squad Name: <%= @squad["name"] %></h3>
+  <h4>Mascot: <%= @squad["mascot"] %></h4>
+  <h4>Number of Students: <%= @count %></h4>
+
+
+  <p>
+    <a href="/squads/<%= @squad["id"] %>/students">student roster</a>
+  </p>
+
+  <p>
+    <a href="/squads">Return to Squads List</a>
+  </p>
+  
+</body>
+</html>
